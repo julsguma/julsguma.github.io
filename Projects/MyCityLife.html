@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+        .mainImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .actors {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .actors_img {
+            margin: 10px 15px 10px 15px;
+        }
+
+        section {
+            width: 800px;
+            height: auto;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title_games {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .title_specific {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: maroon;
+            text-decoration: dashed;
+        }
+
+        .explanation_text {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 25px;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <div w3-include-html="index.html"></div>
+    <section class="center" style="max-width:900px">
+
+        <p class="title_specific">My City Life</p>
+        <h1 class="h1" style="font-size: 20px;"><b><em></em>[Work In Progress]</b></h1>
+        <img class="mainImg" src="../Imgs/MyCityLife.JPG" style="width:60%;">
+
+        <p class="info"><b>About</b></p>
+        <hr style="width:100%;text-align:left;margin-left:0">
+        <p class="info"><b>Team: </b>Individual project</p>
+        <p class="info"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
+        <p class="info">
+            <b>High concept :</b> My City Life is a project where I combine Finite State Machines to have people
+            with different states (the citizens of the city), and pathfiniding so they move
+            correctly across the city, not crossing the street for example.
+        </p>
+
+        <br>
+
+        <!-- Actor information-->
+        <p class="info"><b>The city</b></p>
+        <hr style="width:100%;text-align:left;margin-left:0">
+
+        <!-- Citizens -->
+        <img class="actors_img" src="../Imgs/MyCityLife/person.png" align="left" style="width:30%;" />
+
+        <p class="actors"><b>Citizens</b></p>
+        <p class="actors">
+            They move around the city going to specific places depending on their states:
+
+            <ul class="actors" style="display:table-cell; vertical-align:top;">
+                <li>Hungry</li>
+                <li>Energy</li>
+                <li>Exercise</li>
+                <li>Fun</li>
+            </ul>
+        </p>
+        <br>
+
+        <!-- Places: house -->
+        <img class="actors_img" src="../Imgs/MyCityLife/house.png" align="left" style="width:30%;" />
+        <p class="actors"><b>House</b></p>
+        <p class="actors">
+            People go there to <b>rest</b>. It increase the citizen's <b>energy </b>bar.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <!-- Places: Gym -->
+        <img class="actors_img" src="../Imgs/MyCityLife/gym.png" align="left" style="width:30%;" />
+        <p class="actors"><b>Gym</b></p>
+        <p class="actors">
+            People go there to <b>exercise</b>. It increase the citizen's <b>exercise </b>bar.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <!-- Places: Restaurant -->
+        <img class="actors_img" src="../Imgs/MyCityLife/restaurant.png" align="left" style="width:30%;" />
+        <p class="actors"><b>Restaurant</b></p>
+        <p class="actors">
+            People go there to <b>eat</b>. It decreases the citizen's <b>hungry </b>bar.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <!-- Places: Park -->
+        <img class="actors_img" src="../Imgs/MyCityLife/park.png" align="left" style="width:30%;" />
+        <p class="actors"><b>Park</b></p>
+        <p class="actors">
+            People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
+            category. It increases the citizen's <b>fun </b>bar.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <!-- Places: Cinema -->
+        <img class="actors_img" src="../Imgs/MyCityLife/cinema.png" align="left" style="width:30%;" />
+        <p class="actors"><b>Cinema</b></p>
+        <p class="actors">
+            People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
+            category. It increases the citizen's <b>fun </b>bar.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <!-- Places: Road -->
+        <img class="actors_img" src="../Imgs/MyCityLife/road.png" align="left" style="width:30%;" />
+        <p class="actors"><b>Road</b></p>
+        <p class="actors">
+            People can't cross the road, so in order to go to a place that is on the other side of the road,
+            they will have to find a way around it.
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <p class="info"><b>Demo</b></p>
+        <hr style="width:100%;text-align:left;margin-left:0">
+        <br>
+        <video width="800" controls>
+            <source src="../Imgs/MyCityLife[wip].mp4" type="video/mp4">
+            <source src="../Imgs/MyCityLife[wip].ogg" type="video/ogg">
+        </video>
+
+
+
+
+        <br>
+        <br>
+    </section>
+
+</body>
+</html>
