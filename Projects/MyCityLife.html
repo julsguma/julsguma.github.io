@@ -65,6 +65,48 @@
             text-align: center;
         }
 
+        /* Hover */
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+
 
     </style>
 
@@ -72,6 +114,34 @@
 
 
 <body>
+    <!-- Games -->
+    <div class="dropdown">
+        <button class="dropbtn">Games</button>
+        <div class="dropdown-content">
+            <a href="../Games/eyesOfMinerva.html">Eyes of Minerva</a>
+            <a href="../Games/ToyTank.html">ToyTank!</a>
+            <a href="../Games/Gooh.html">Gooh</a>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+            <a href="MyCityLife.html">My City Life</a>
+            <a href="PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+            <a href="#">Space partitioning</a>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="dropdown">
+        <button class="dropbtn">About me</button>
+    </div>
+
+
+
+
     <div w3-include-html="index.html"></div>
     <section class="center" style="max-width:900px">
 

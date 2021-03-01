@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            width: 800px;
+            height: auto;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title_games {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .title_specific {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: maroon;
+            text-decoration: dashed;
+        }
+
+        .explanation_text {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Hover */
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Games -->
+    <div class="dropdown">
+        <button class="dropbtn">Games</button>
+        <div class="dropdown-content">
+            <a href="eyesOfMinerva.html">Eyes of Minerva</a>
+            <a href="ToyTank.html">ToyTank!</a>
+            <a href="Gooh.html">Gooh</a>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+            <a href="..\Projects\MyCityLife.html">My City Life</a>
+            <a href="..\Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+            <a href="#">Space partitioning</a>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="dropdown">
+        <button class="dropbtn">About me</button>
+    </div>
+
+
+    <div w3-include-html="index.html"></div>
+    <section class="center" style="max-width:900px">
+
+        <p class="title_specific">Gooh!</p>
+        <img src="../Imgs/gooh.jpg" style="width:60%;">
+
+
+        <p class="info"><b>Team: </b>5 artists and 5 programmers</p>
+        <p class="info"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
+        <p class="info">
+            <b>High concept :</b> The player has a gun that shoots jelly, which allows them to jump
+            and reach higher places. They will have to fight enemies and avoid hazzards in order
+            to escape.
+        </p>
+
+        <p class="info"><b>My role: </b>Gameplay programmer + designer</p>
+
+        <p class="info"><b>My main contributions to the game: </b></p>
+        <ul class="info">
+            <li>Implemented the movement of the player</li>
+            <li>Implement animations with Spine</li>
+            <li>Developed an enemy</li>
+            <li>Participated in the design of levels</li>
+            <li>Implemented the pause menu</li>
+        </ul>
+
+
+        <br>
+        <br>
+
+        <video width="800" controls>
+            <source src="../Imgs/Gooh_trailer.mp4" type="video/mp4">
+            <source src="../Imgs/Gooh_trailer.ogg" type="video/ogg">
+        </video>
+
+
+    </section>
+
+</body>
+</html>
