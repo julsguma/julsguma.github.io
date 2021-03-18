@@ -8,27 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .topInfo {
+            background-color: lightgrey;
+            width: 100%;
+            height: 100px;
+            margin-left: -0px;
+            margin-top: -0px;
         }
 
         section {
-            width: 800px;
+            width: 1000px;
             height: auto;
             position: absolute;
             margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
             font-size: 20px;
         }
 
         .center {
-            text-align: center;
+            text-align: left;
         }
 
         .title_games {
@@ -60,20 +57,24 @@
 
         p {
             text-align: center;
+
         }
 
         /* Hover */
         .dropbtn {
-            background-color: black;
-            color: white;
+            background-color: transparent;
+            color: black;
             padding: 16px;
             font-size: 16px;
             border: none;
+            font-size: 30px;
         }
 
         .dropdown {
-            position: relative;
+            position: absolute;
             display: inline-block;
+            top: 1.3%;
+            z-index: 2;
         }
 
         .dropdown-content {
@@ -89,6 +90,7 @@
             color: black;
             padding: 12px 16px;
             text-decoration: none;
+            font-size: 17px;
             display: block;
         }
 
@@ -102,6 +104,17 @@
 
         .dropdown:hover .dropbtn {
             background-color: grey;
+
+        }
+
+        .img-with-text {
+            text-align: justify;
+            width: 100%;
+        }
+
+        .img-with-text img {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 
@@ -109,150 +122,137 @@
 
 <body>
     <!-- Games -->
-    <div class="dropdown">
-        <button class="dropbtn">Games</button>
-        <div class="dropdown-content">
-            <a href="Games\eyesOfMinerva.html">Eyes of Minerva</a>
-            <a href="Games\ToyTank.html">ToyTank!</a>
-            <a href="Games\Gooh.html">Gooh</a>
+    <div class="topInfo">
+        <div class="dropdown" style="left: 35%;">
+            <button class="dropbtn">Games</button>
+            <div class="dropdown-content">
+                <a href="Games\eyesOfMinerva.html">Eyes of Minerva</a>
+                <a href="Games\ToyTank.html">ToyTank!</a>
+                <a href="Games\Gooh.html">Gooh</a>
+            </div>
+        </div>
+
+        <!-- Projects-->
+        <div class="dropdown" style="left: 45%;">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+                <a href="Projects\MyCityLife.html">My City Life</a>
+                <a href="Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+                <a href="#">Space partitioning</a>
+            </div>
+        </div>
+
+        <!-- About me-->
+        <div class="dropdown" style="left: 55%;">
+            <button onclick="window.location.href='AboutMe.html';" class="dropbtn">About me</button>
         </div>
     </div>
 
-    <!-- Projects -->
-    <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-            <a href="Projects\MyCityLife.html">My City Life</a>
-            <a href="Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
-            <a href="#">Space partitioning</a>
-        </div>
+
+
+    <div class="topImg">
+        <img src="Imgs/juliaguma.png" style="width:100%;height:100%;">
     </div>
 
-    <!-- About me -->
-    <div class="dropdown">
-        <button class="dropbtn">About me</button>
-    </div>
-
-    <!--
-    <nav class="w3-bar w3-black">
-        <a href="#about" class="w3-button w3-bar-item">About</a>
-        <a href="#games" class="w3-button w3-bar-item">Games</a>
-        <a href="#projects" class="w3-button w3-bar-item">Projects</a>
-        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-    </nav>
-        -->
-
-    <section class="center" style="max-width:900px">
-
-        <h1 class="title_games">GAMES</h1>
-
-        <!-- ******************* Eyes of Minerva ******************* -->
-        <p class="title_specific">Eyes of Minerva</p>
-        <img src="Imgs/eyesOfMinerva_title.jpeg" style="width:100%;">
+    <br>
+    <br>
+    <br>
 
 
-        <p class="info"><b>Team: </b>4 artists and 6 programmers</p>
-        <p class="info"><b>Tecnhology: </b>Unreal Engine 4</p>
-        <p class="info">
-            <b>High concept :</b> Eyes of Minerva is a stealth first person puzzle game, where the player
+
+    <section class="center" style=" right: 100px;">
+
+        <p class="info" style="margin-bottom: 250px;">
+
+            <!------------------------------------------------- GAMES ------------------------------------------------->
+
+            <b style="font-size: 80px;">Games</b>
+            <br>
+
+            <!-- Eyes of Minerva -->
+            <b style="font-size: 50px; color: darkred;font-family:verdana;">Eyes of Minerva</b>
+            <br>
+            <br>
+            <img src="Imgs/eyesOfMinerva_title.jpeg" align="left" style="width:50%; margin-right: 30px;">
+
+            Stealth first person puzzle game, where the player
             will traverse a maze of rooms riddled with enemies. The player will have to use all the tools at
             their disposal to either distract or disable the enemies.
+
         </p>
 
-        <p class="info"><b>My role: </b>Gameplay programmer + Producer</p>
 
-        <p class="info"><b>My main contributions to the game: </b></p>
-        <ul class="info">
-            <li>Developed the Spider enemy</li>
-            <li>Implement big part of shared enemy mechanics</li>
-            <li>Level 1 decoration</li>
-            <li>Organize tasks and communicate with the art department</li>
-        </ul>
+        <!-- ToyTank! -->
+        <p class="info" style="margin-bottom: 250px;">
 
+            <b style="font-size: 50px; color: darkred;font-family:verdana;">ToyTank!</b>
+            <br>
+            <br>
+            <img src="Imgs/toyTank.png" align="left" style="width:50%; margin-right: 30px;">
 
-        <br>
-        <br>
-
-        <video width="800" controls>
-            <source src="Imgs/eyesOfMinerva_video.mp4" type="video/mp4">
-            <source src="Imgs/eyesOfMinerva_video.ogg" type="video/ogg">
-        </video>
-
-        <br>
-        <br>
-        <br>
-
-
-        <!-- ******************* ToyTank! ******************* -->
-        <p class="title_specific">ToyTank!</p>
-        <img src="Imgs/toyTank.png" style="width:100%;">
-
-
-        <p class="info"><b>Team: </b>7 programmers</p>
-        <p class="info"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
-        <p class="info">
-            <b>High concept :</b> ToyTank is a 3D action platformer where you have to go
+            3D action platformer where you have to go
             from point A to point B using your tank skills... You must go through all the
             different levels and escape from the room.
+
+
+
         </p>
 
-        <p class="info"><b>My role: </b>Gameplay programmer</p>
+        <!-- Gooh -->
+        <p class="info" style="margin-bottom: 250px;">
 
-        <p class="info"><b>My main contributions to the game: </b></p>
-        <ul class="info">
-            <li>Developed the submarine enemy</li>
-            <li>Implement particle system</li>
-            <li>Designed and created some levels</li>
-            <li>Implemented physics collision detection system</li>
-        </ul>
+            <b style="font-size: 50px; color: darkred;font-family:verdana;">Gooh</b>
+            <br>
+            <br>
+            <img src="Imgs/gooh.jpg" align="left" style="width:30%; margin-right: 30px;">
 
-
-        <br>
-        <br>
-
-        <video width="800" controls>
-            <source src="Imgs/ToyTank!Trailer.mp4" type="video/mp4">
-            <source src="Imgs/ToyTank!Trailer.ogg" type="video/ogg">
-        </video>
-
-        <br>
-        <br>
-        <br>
-
-        <!-- ******************* Gooh ******************* -->
-        <p class="title_specific">Gooh!</p>
-        <img src="Imgs/gooh.jpg" style="width:60%;">
-
-
-        <p class="info"><b>Team: </b>5 artists and 5 programmers</p>
-        <p class="info"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
-        <p class="info">
-            <b>High concept :</b> The player has a gun that shoots jelly, which allows them to jump
+            2D platformer where the player has a gun that shoots jelly, which allows them to jump
             and reach higher places. They will have to fight enemies and avoid hazzards in order
             to escape.
+
         </p>
 
-        <p class="info"><b>My role: </b>Gameplay programmer + designer</p>
+    </section>
 
-        <p class="info"><b>My main contributions to the game: </b></p>
-        <ul class="info">
-            <li>Implemented the movement of the player</li>
-            <li>Implement animations with Spine</li>
-            <li>Developed an enemy</li>
-            <li>Participated in the design of levels</li>
-            <li>Implemented the pause menu</li>
-        </ul>
+    <section class="center" style=" left: 100px; margin-top: 1700px">
+
+        <!------------------------------------------------- PROJECTS ------------------------------------------------->
+        <!-- My City Life -->
+        <p class="info" style="margin-bottom: 250px;">
+
+            <b style="font-size: 50px; color: darkred;font-family:verdana;">My City Life</b>
+            <br>
+            <br>
+            <img src="Imgs/MyCityLife.JPG" align="left" style="width:30%; margin-right: 30px;">
+
+            My City Life is a project where I combine Finite State Machines to have people
+            with different states (the citizens of the city), and pathfiniding so they move
+            correctly across the city, not crossing the street for example.
+
+        </p>
+
+        <!-- Real-Time Pencil Rendering -->
+        <p class="info" style="margin-bottom: 250px;">
+
+            <b style="font-size: 50px; color: darkred;font-family:verdana;">Real-Time Pencil Rendering</b>
+            <br>
+            <br>
+            <img src="Imgs/PencilRenderingTechnique/finalResult.JPG" align="left" style="width:30%; margin-right: 30px;">
+
+            Final project for my <em>CS562: Advanced Real-Time Rendering Techniques </em>class.
+            The project consists on rendering 3D objects in pencil style drawing. This tries to simulate the human
+            way of drawing things.
+
+        </p>
 
 
-        <br>
-        <br>
-
-        <video width="800" controls>
-            <source src="Imgs/Gooh_trailer.mp4" type="video/mp4">
-            <source src="Imgs/Gooh_trailer.ogg" type="video/ogg">
-        </video>
 
     </section>
+
+
+
+    <img src="Imgs/mini_games.png" style="width:18%;margin-top:200px; margin-left: 200px">
+
 
 </body>
 </html>
