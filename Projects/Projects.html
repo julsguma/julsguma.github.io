@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            width: 800px;
+            height: auto;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title_games {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .title_specific {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: maroon;
+            text-decoration: dashed;
+        }
+
+        .explanation_text {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Hover */
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+
+
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* ----------------------------------------------------- */
+        .content_img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            float: left;
+            margin-right: 10px;
+        }
+        /* Child Text Container */
+            .content_img div {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: lightblue;
+                color: white;
+                margin-bottom: 0px;
+                font-family: sans-serif;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: visibility 0s, opacity 0.5s linear;
+                transition: visibility 0s, opacity 0.5s linear;
+            }
+
+        /* Hover on Parent Container */
+        .content_img:hover {
+            cursor: pointer;
+        }
+
+         .content_img:hover div {
+             width: 100%;
+             padding: 0% 0px;
+             visibility: visible;
+             opacity: 0.8;
+             color: red;
+         }
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Games -->
+    <div class="dropdown">
+        <button class="dropbtn">Games</button>
+        <div class="dropdown-content">
+            <a href="eyesOfMinerva.html">Eyes of Minerva</a>
+            <a href="ToyTank.html">ToyTank!</a>
+            <a href="Gooh.html">Gooh</a>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+            <a href="..\Projects\MyCityLife.html">My City Life</a>
+            <a href="..\Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+            <a href="#">Space partitioning</a>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="dropdown">
+        <button onclick="window.location.href='../AboutMe.html';" class="dropbtn">About me</button>
+    </div>
+
+
+    <section class="center" style="max-width:200%">
+        <br>
+        <br>
+        <a href="../index.html">
+            <img src="../Imgs/icon.png" style="width:20%">
+        </a>
+        <p class="title_specific">Projects</p>
+    </section>
+
+    <br>
+    <br>
+
+
+
+
+    <div style="width: 25%; height:20%; background-color:yellowgreen; margin-top: 15%; margin-left: 23%; margin-bottom:2%; float:left">
+
+        <div class="content_img">
+            <a href="MyCityLife.html">
+                <img src='../Imgs/MyCityLife.JPG' style="width:100%; height:100%;">
+                
+                <div style="color: black; font-size: 20px; box-sizing: border-box; padding: 10px;">
+                    <b>My City Life</b>
+                    <br>
+                    <br>
+                    Combination of Finite State Machines and pathfinding to move people around the city
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div style="width: 20%; height:20%; background-color:yellowgreen; margin-top: 15%; margin-left: 10%; float:left">
+
+        <div class="content_img">
+            <a href="PencilRenderingTechnique.html">
+                <img src='../Imgs/PencilRenderingTechnique/sameDirectionFinal.JPG' style="width:100%; height:100%;">
+
+                <div style="color: black; font-size: 20px; box-sizing: border-box; padding: 10px;">
+                    <b> Real-time pencil rendering technique</b>
+                    <br>
+                    <br>
+                    Display 3D objects as if they were drawn in pencil style drawing.
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div style="width: 30%; height:20%; background-color:yellowgreen; margin-bottom: 70%; margin-left: 20%;">
+
+        <div class="content_img">
+            <a href="#">
+                <img src='../Imgs/spacePartitioning.PNG' style="width:100%; height:100%;">
+
+                <div style="color: black; font-size: 20px; box-sizing: border-box; padding: 10px;">
+                    <b> Space partitioning [WIP] </b>
+                    <br>
+                    <br>
+                    Use different techniques to optimize the collision detection between objects.
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr style="width:100%;height: 40px;bottom:10px;background-color:darkslategrey; margin-top: 10px;">
+
+
+</body>
+        </html>
