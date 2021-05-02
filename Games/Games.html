@@ -3,28 +3,20 @@
 <head>
     <style>
 
-        img {
+        /*img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
+        }*/
 
         section {
-            width: 800px;
-            height: auto;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            font-size: 20px;
+            width: 100%;
         }
 
         .center {
             text-align: center;
         }
-
+        
         .title_games {
             text-align: center;
             font-size: 60px;
@@ -122,14 +114,14 @@
             background-color: #4CAF50;
             color: white;
         }
-
+        
         /* ----------------------------------------------------- */
         .content_img {
             position: relative;
-            width: 100%;
-            height: 100%;
             float: left;
-            margin-right: 10px;
+            width: 45%;
+            height: auto;
+            margin-left: 2px;
         }
         /* Child Text Container */
             .content_img div {
@@ -138,26 +130,30 @@
                 right: 0;
                 background: lightblue;
                 color: white;
-                margin-bottom: 0px;
                 font-family: sans-serif;
                 opacity: 0;
                 visibility: hidden;
                 -webkit-transition: visibility 0s, opacity 0.5s linear;
                 transition: visibility 0s, opacity 0.5s linear;
             }
-
+            
         /* Hover on Parent Container */
         .content_img:hover {
             cursor: pointer;
-        }
+        } 
 
          .content_img:hover div {
              width: 100%;
              padding: 0% 0px;
              visibility: visible;
              opacity: 0.8;
-             color: red;
+
          }
+
+        .responsive {
+            max-width: 50%;
+            height: auto;
+        }
 
 
     </style>
@@ -171,6 +167,7 @@
         <button class="dropbtn">Games</button>
         <div class="dropdown-content">
             <a href="eyesOfMinerva.html">Eyes of Minerva</a>
+            <a href="eyesOfMinerva_VR.html">Eyes of Minerva: VR</a>
             <a href="ToyTank.html">ToyTank!</a>
             <a href="Gooh.html">Gooh</a>
         </div>
@@ -191,57 +188,82 @@
         <button onclick="window.location.href='../AboutMe.html';" class="dropbtn">About me</button>
     </div>
 
-
-    <section class="center" style="max-width:200%">
-        <br>
+    
+    <section class="center">
         <br>
         <a href="../index.html">
-            <img src="../Imgs/icon.png" style="width:20%">
+            <img src="../Imgs/icon.png" class ="responsive" width="200" >
         </a>
         <p class="title_specific">Games</p>
+
+        <div style="width: 60%; height:20%; margin-top: 1vw; margin-left: 20%; margin-bottom:2vw; ">
+
+            <div class="content_img">
+                <a href="eyesOfMinerva.html">
+                    <img src='../Imgs/eyesOfMinerva_crop.jpeg' style="max-width:100%; height:auto;">
+                    <div style="color: black; font-size: 1vw; box-sizing: border-box; max-width:100%;height:auto;">
+                        <b>Eyes of Minerva </b>
+                        <br>
+                        <br>
+                        Stealth first person puzzle game where the player will have to use all the tools at
+                        their disposal to traverse a maze of rooms riddled with enemies.
+                    </div>
+                </a>
+            </div>
+
+            <div class="content_img"style="margin-left:8%;">
+                <a href="eyesOfMinerva_VR.html">
+                    <img src='../Imgs/eyesOfMinerva_crop_vr.jpeg' style="max-width:100%; height:auto;">
+                    <div style="color: black; font-size: 1vw; box-sizing: border-box; max-width:100%;height:auto;">
+                        <b>Eyes of Minerva: VR </b>
+                        <br>
+                        <br>
+                        Action packed VR shooter for HTC Vive where the player must
+                        defend themselves from hordes of enemies from inside an elevator.
+                    </div>
+                </a>
+            </div>
+
+            <div class="content_img"style="margin-top:8%;">
+                <a href="ToyTank.html">
+                    <img src='../Imgs/ToyTank_poster.jpg' style="max-width:100%; height:auto;">
+                    <div style="color: black; font-size: 1vw; box-sizing: border-box; max-width:100%;height:auto;">
+                        <b> Toy Tank! </b>
+                        <br>
+                        <br>
+                        3D action platformer where you have to go
+                        from point A to point B using your tank skills
+                    </div>
+                </a>
+            </div>
+
+            <div class="content_img"style="margin-left:8%; margin-top:8%;">
+                <a href="Gooh.html">
+                    <img src='../Imgs/gooh.jpg' style="max-width:100%; height:auto;">
+                    <div style="color: black; font-size: 1vw; box-sizing: border-box; max-width:100%;height:auto;">
+                        <b> Gooh </b>
+                        <br>
+                        <br>
+                        Use the jelly to jump and fight your enemies in order to escape
+                    </div>
+                </a>
+            </div>
+
+
+
+
+        </div><!-- Final div -->
+        
+
+
     </section>
 
-    <br>
-    <br>
+    
 
+    
+    
+    <!--
 
-
-
-    <div style="width: 20%; height:20%; background-color:yellowgreen; margin-top: 15%; margin-left: 25%; margin-bottom:2%; float:left">
-
-        <div class="content_img">
-            <a href="eyesOfMinerva.html">
-                <img src='../Imgs/eyesOfMinerva_crop.jpeg' style="width:100%; height:100%;">
-                
-                <div style="color: black; font-size: 20px; box-sizing: border-box; padding: 10px;">
-                    <b>Eyes of Minerva </b>
-                    <br>
-                    <br>
-                    Stealth first person puzzle game where the player will have to use all the tools at
-                    their disposal to traverse a maze of rooms riddled with enemies.
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-    <div style="width: 20%; height:20%; background-color:yellowgreen; margin-top: 15%; margin-left: 10%; float:left">
-
-        <div class="content_img">
-            <a href="ToyTank.html">
-                <img src='../Imgs/ToyTank_poster.jpg' style="width:100%; height:100%;">
-
-                <div style="color: black; font-size: 20px; box-sizing: border-box; padding: 10px;">
-                    <b> Toy Tank! </b>
-                    <br>
-                    <br>
-                    3D action platformer where you have to go
-                    from point A to point B using your tank skills
-                </div>
-            </a>
-        </div>
-
-    </div>
 
     <div style="width: 20%; height:20%; background-color:yellowgreen; margin-bottom: 70%; margin-left: 25%;">
 
@@ -262,6 +284,6 @@
 
     <hr style="width:100%;height: 40px;bottom:10px;background-color:darkslategrey; margin-top: 10px;">
 
-
+        -->
 </body>
         </html>
