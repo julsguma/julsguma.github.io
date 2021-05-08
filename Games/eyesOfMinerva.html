@@ -1,109 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        section {
-            width: 800px;
-            height: auto;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            font-size: 20px;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .title_games {
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .title_specific {
-            text-align: center;
-            font-size: 50px;
-            font-weight: bold;
-            color: maroon;
-            text-decoration: dashed;
-        }
-
-        .explanation_text {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        .info {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
-
-
-        /* Hover */
-        .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: grey;
-        }
-
-
-
-
-    </style>
-
+    <title>Juls Guma</title>
+    <link href="..\style.css" rel="stylesheet">
 </head>
 
 
@@ -126,7 +25,6 @@
         <div class="dropdown-content">
             <a href="Projects\MyCityLife.html">My City Life</a>
             <a href="..\Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
-            <a href="#">Space partitioning</a>
         </div>
     </div>
 
@@ -138,7 +36,7 @@
 
 
 
-    <section class="center" style="max-width:900px">
+    <section class="section_AboutMe" style="max-width:900px">
 
         <br>
         <br>
@@ -146,23 +44,22 @@
             <img src="../Imgs/icon.png" style="width:20%">
         </a>
 
-        <h1 class="title_games">GAMES</h1>
         <p class="title_specific">Eyes of Minerva</p>
         <img src="../Imgs/eyesOfMinerva_title.jpeg" style="width:100%;">
 
 
-        <p class="info"><b>Team: </b>4 artists and 6 programmers</p>
-        <p class="info"><b>Tecnhology: </b>Unreal Engine 4</p>
-        <p class="info">
+        <p class="text"><b>Team: </b>4 artists and 6 programmers</p>
+        <p class="text"><b>Tecnhology: </b>Unreal Engine 4</p>
+        <p class="text">
             <b>High concept :</b> Eyes of Minerva is a stealth first person puzzle game, where the player
             will traverse a maze of rooms riddled with enemies. The player will have to use all the tools at
             their disposal to either distract or disable the enemies.
         </p>
 
-        <p class="info"><b>My role: </b>Gameplay programmer + Producer</p>
+        <p class="text"><b>My role: </b>Gameplay programmer + Producer</p>
 
-        <p class="info"><b>My main contributions to the game: </b></p>
-        <ul class="info">
+        <p class="text"><b>My main contributions to the game: </b></p>
+        <ul class="text">
             <li>Implement the Spider enemy</li>
             <li>Implement big part of shared enemy mechanics</li>
             <li>Contribute on sound integration</li>

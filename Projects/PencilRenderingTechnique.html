@@ -3,143 +3,8 @@
 <html>
 
 <head>
-
-    <style>
-
-        .mainImg {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .actors {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        .actors_img {
-            margin: 1px 15px 1px 15px;
-        }
-
-        section {
-            width: 1000px;
-            height: auto;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            font-size: 20px;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .title_games {
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .title_specific {
-            text-align: center;
-            font-size: 50px;
-            font-weight: bold;
-            color: maroon;
-            text-decoration: dashed;
-        }
-
-        .explanation_text {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        .info {
-            text-align: left;
-            font-size: 25px;
-        }
-
-
-        h1 {
-            text-align: center;
-        }
-
-        /* Hover */
-        .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: grey;
-        }
-
-        video {
-            width: 50%;
-            float: left;
-            margin: 1px 150px 1px 15px;
-            z-index: 0;
-            position: relative;
-            /*margin-left: -220px;*/
-            /*margin-right: -920px;*/
-        }
-
-        .videoBox {
-            width: 900px;
-            overflow: hidden;
-            z-index: 0;
-            /*display: block;*/
-        }
-
-        .specialNextToVideo {
-            text-align: left;
-            font-size: 25px;
-            margin-left: 360px;
-            margin-top: 20px;
-            z-index: 1;
-            position: absolute;
-        }
-
-        #specific_video {
-            margin-right: -600px;
-        }
-
-
-
-    </style>
+    <title>Juls Guma</title>
+    <link href="..\style.css" rel="stylesheet">
 
 </head>
 
@@ -162,7 +27,6 @@
         <div class="dropdown-content">
             <a href="MyCityLife.html">My City Life</a>
             <a href="PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
-            <a href="#">Space partitioning</a>
         </div>
     </div>
 
@@ -172,7 +36,7 @@
     </div>
 
 
-    <section class="center" style="max-width:900px">
+    <section class="section_AboutMe" style="max-width:900px">
 
         <br>
         <br>
@@ -200,10 +64,10 @@
         <hr style="width:100%;text-align:left;margin-left:0">
 
         <!-- Contour detection -->
-        <img class="actors_img" src="../Imgs/PencilRenderingTechnique/contourDetection.JPG" align="left" style="width:30%;" />
+        <img class="step_img" src="../Imgs/PencilRenderingTechnique/contourDetection.JPG" align="left" style="width:30%;" />
 
-        <p class="actors"><b>Contour detection</b></p>
-        <p class="actors">
+        <p class="text"><b>Contour detection</b></p>
+        <p class="text">
             First of all I detect the contours using Sobel filter and normals.
         </p>
         <br>
@@ -214,9 +78,9 @@
         <br>
 
         <!-- Contour distortion -->
-        <img class="actors_img" src="../Imgs/PencilRenderingTechnique/contourDistortion.JPG" align="left" style="width:30%;" />
-        <p class="actors"><b>Contour distortion</b></p>
-        <p class="actors">
+        <img class="step_img" src="../Imgs/PencilRenderingTechnique/contourDistortion.JPG" align="left" style="width:30%;" />
+        <p class="text"><b>Contour distortion</b></p>
+        <p class="text">
             I distort the contours using a distortion plane. For that, I divide a plane in uniform rectangles, adding small errors to the
             texture coordinates of those rectangles. In this way, when I display the contour detection image onto that plane, the errors in the UVs
             will add the distortion effect.
@@ -227,9 +91,9 @@
         <br>
 
         <!-- Multiple contours -->
-        <img class="actors_img" src="../Imgs/PencilRenderingTechnique/multipleContours.JPG" align="left" style="width:30%;" />
-        <p class="actors"><b>Multiple contours</b></p>
-        <p class="actors">
+        <img class="step_img" src="../Imgs/PencilRenderingTechnique/multipleContours.JPG" align="left" style="width:30%;" />
+        <p class="text"><b>Multiple contours</b></p>
+        <p class="text">
             In order to simulate overlapping strokes, I add multiple distorted contours.
         </p>
         <br>
@@ -239,10 +103,10 @@
         <br>
 
         <!-- 3D Textures -->
-        <p class="actors" style="margin-left: 350px;"><b>Texture generation</b></p>
+        <p class="text" style="margin-left: 350px;"><b>Texture generation</b></p>
 
         <div class="videoBox">
-            <video id="specific_video" width="400" ; autoplay muted loop>
+            <video class="video_pencilRendering" id="specific_video"; autoplay muted loop>
                 <source src="../Imgs/PencilRenderingTechnique/3dTexture.mp4" type="video/mp4">
             </video>
             <p class="specialNextToVideo">

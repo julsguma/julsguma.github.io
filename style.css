@@ -152,3 +152,40 @@
     max-width: 50%;
     height: auto;
 }
+
+/* Specific projects: My city life */
+.mainImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actors_img {
+    margin: 10px 15px 10px 15px;
+}
+
+/* Specific projects: Pencil rendering techniques */
+.step_img {
+    margin: 1px 15px 1px 15px;
+}
+
+.video_pencilRendering {
+    width: 50%;
+    float: left;
+    margin: 1px 150px 1px 15px;
+    z-index: 0;
+    position: relative;
+}
+
+.specialNextToVideo {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 360px;
+    margin-top: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+#specific_video {
+    margin-right: -600px;
+}

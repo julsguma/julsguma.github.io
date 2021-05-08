@@ -1,103 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        section {
-            width: 800px;
-            height: auto;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            font-size: 20px;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .title_games {
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .title_specific {
-            text-align: center;
-            font-size: 50px;
-            font-weight: bold;
-            color: maroon;
-            text-decoration: dashed;
-        }
-
-        .explanation_text {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        .info {
-            text-align: left;
-            font-size: 25px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        /* Hover */
-        .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: grey;
-        }
-    </style>
+    <title>Juls Guma</title>
+    <link href="..\style.css" rel="stylesheet">
 
 </head>
 
@@ -120,7 +25,6 @@
         <div class="dropdown-content">
             <a href="..\Projects\MyCityLife.html">My City Life</a>
             <a href="..\Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
-            <a href="#">Space partitioning</a>
         </div>
     </div>
 
@@ -130,7 +34,7 @@
     </div>
 
 
-    <section class="center" style="max-width:900px">
+    <section class="section_AboutMe" style="max-width:900px">
 
         <br>
         <br>
@@ -139,21 +43,21 @@
         </a>
 
         <p class="title_specific">ToyTank!</p>
-        <img src="../Imgs/ToyTank_poster.jpg" style="width:60%;">
+        <img class="mainImg" src="../Imgs/ToyTank_poster.jpg" style="width:60%;">
 
 
-        <p class="info"><b>Team: </b>7 programmers</p>
-        <p class="info"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
-        <p class="info">
+        <p class="text"><b>Team: </b>7 programmers</p>
+        <p class="text"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
+        <p class="text">
             <b>High concept :</b> ToyTank is a 3D action platformer where you have to go
             from point A to point B using your tank skills... You must go through all the
             different levels and escape from the room.
         </p>
 
-        <p class="info"><b>My role: </b>Gameplay programmer</p>
+        <p class="text"><b>My role: </b>Gameplay programmer</p>
 
-        <p class="info"><b>My main contributions to the game: </b></p>
-        <ul class="info">
+        <p class="text"><b>My main contributions to the game: </b></p>
+        <ul class="text">
             <li>Developed the submarine enemy</li>
             <li>Implement particle system</li>
             <li>Designed and created some levels</li>
@@ -171,17 +75,6 @@
         <br>
         <br>
         <br>
-
-        <!--
-        <iframe width="800"
-                src="https://youtu.be/xINBdxNYEbg"></iframe>
-
-
-
-    <video width="800" controls>
-        <source src="../Imgs/ToyTank!Trailer.mp4" type="video/mp4">
-    </video>
-        -->
 
     </section>
 
