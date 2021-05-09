@@ -1,5 +1,23 @@
 ﻿
 /* index.html */
+
+
+.body_index {
+    font-family: Arial;
+    margin: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategrey;
+    height: 2vw;
+    color: white;
+    text-align: center;
+}
+
 .button {
     border: none;
     color: white;
