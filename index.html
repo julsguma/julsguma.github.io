@@ -1,61 +1,74 @@
 ﻿
 <!DOCTYPE html>
 <html>
-<head>    
+<head>
     <title>Juls Guma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
 
+    <style>
+        .bgColor {
+            background-color:#001524;
+        }
+
+        .buttonStyle {
+            border: none;
+            background-color: #D7DEDF;
+            padding: 1% 2%;
+            font-size: 26px;
+            cursor: pointer;
+            display: inline-block;
+            color: black;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            border-bottom: ridge;
+            border-radius: 8px;
+        }
+
+        .buttonStyle:hover {
+            background-color: #ACB2B2;
+            color: white;
+        }
+
+        hr.line {
+            border-top: 3px solid #bbb;
+            margin-left: 0%;
+            width: 50%;
+        }
+
+    </style>
+
 </head>
 
-<body class="body_index">
-    
-     <div style="width: 100%; height: auto; position: center;">
-         <img src="Imgs/juliaguma2.png" style="width:100%;height:100%; ">
+<body class="body_index bgColor">
 
-         <p style="font-size: 1.2vw; color: grey; text-align: center;">
-             [Webpage in progress]
-         </p>
-     </div>
-
-    <div style="width: 33%; float:left; ">
-
-        <form style="text-align: center;">
-            <button class="button button1" formaction="Games\Games.html">Games</button>
+    <div style="margin-top: 5%; margin-left: 20%; margin-right: 30%;">
+        <form>
+            <button class="buttonStyle" formaction="Games\Games.html">Home</button>
+            <button class="buttonStyle" formaction="Projects\Projects.html">Projects</button>
+            <button class="buttonStyle" formaction="AboutMe.html">About me</button>
+            <hr class="line">
         </form>
-
-        <img src="Imgs/mini_games.png" style="width:50%;display: block; margin-left: auto;margin-right: auto;">
     </div>
 
-    
-    <div style="width: 33%; height:33%; float:left;">
+    <div style="margin-top: 10%; margin-left: 10%; margin-bottom:2vw;display: grid; align-items: center; grid-template-columns: 1fr 1fr 1fr; column-gap: 400px;">
+        <div class="text">
+            <div>
+                <p style="font-size: 2.2vw; color: white; text-align: left; line-height: 0.01;">
+                    Júlia Gumà
+                </p>
 
-        <form style="text-align: center;">
-            <button class="button button1" formaction="Projects\Projects.html">Projects</button>
-        </form>
+                <p style="font-size: 4.2vw; color: white; text-align: left; white-space: nowrap;">
+                    <b>
+                        AI Programmer
+                    </b>
+                </p>
+            </div>
+        </div>
 
-        <img src="Imgs/mini_projects.png" style="width:50%; display: block; margin-left: auto;margin-right: auto;">
+        <div style="width:100%;height:100%; ">
+            <img src="Imgs/juls_icon.png" width="400" , height="400">
+        </div>
     </div>
-
-    
-    <div style="width: 33%; height:36%; float:left; ">
-
-        <form style="text-align: center;">
-            <button class="button button1" formaction="AboutMe.html">About me</button>
-        </form>
-
-        <img src="Imgs/mini_about.png" style="width:45%;display: block; margin-left: auto;margin-right: auto; margin-top: 5%;">
-    </div>
-
-    <div class="footer">
-        <p></p>
-    </div>
-
-
-    <!--
-    <hr style="width:100%;height: 2vw;bottom:2vw;background-color:darkslategrey;">
-
-    -->
-
 </body>
 </html>
