@@ -1,161 +1,186 @@
+
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <title>Juls Guma</title>
-    <link href="..\style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .bgColor {
+            background-color: #001524;
+        }
+
+        .text {
+            color: ghostwhite;
+            font-size: 1.0vw;
+            font-family: Tahoma
+        }
+
+        .title {
+            color: powderblue;
+            font-size: 1.0vw;
+            font-family: Tahoma
+        }
+    </style>
+
 </head>
 
+<body class="body_index bgColor">
 
-<body>
-    <!-- Games -->
-    <div class="dropdown">
-        <button class="dropbtn">Games</button>
-        <div class="dropdown-content">
-            <a href="../Games/eyesOfMinerva.html">Eyes of Minerva</a>
-            <a href="../Games/eyesOfMinerva_VR.html">Eyes of Minerva: VR</a>
-            <a href="../Games/ToyTank.html">ToyTank!</a>
-            <a href="../Games/Gooh.html">Gooh</a>
+    <div style="font-size: 1.5rem; height: 20%; margin-top: 1vw; margin-left: 18%; margin-bottom: 2vw; font-family: Tahoma; cursor: pointer;" onclick="window.location='../index.html';">
+        <h1>
+            <a style="color: white; text-decoration: none;">
+                Júlia Gumà
+            </a>
+            <a style="font-size: 2.0rem; color: orange; display: block ">
+                Game AI Programmer
+            </a>
+        </h1>
+    </div>
+
+    <div style="background-color: slategrey; font-size: 2.8rem;">
+        <p style="text-align: center; color: ghostwhite; padding-top: 5px; padding-bottom: 5px; font-family: Tahoma ">My City Life</p>
+    </div>
+
+    <div style="font-size: 0.8rem; height: 100%; margin-top: 1vw; margin-left: 18%; margin-bottom: 2vw; margin-right: 18%;">
+
+        <div style="margin-top: 2vw; margin-bottom: 2vw;">
+            <img src="../Imgs/MyCityLife.JPG" style="width: 30%; display: block; margin-left: auto; margin-right: auto; ">
         </div>
-    </div>
 
-    <!-- Projects -->
-    <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-            <a href="MyCityLife.html">My City Life</a>
-            <a href="PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+        <!-- Team -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    Team
+                </a>
+            </h1>
+            <p class="text">
+                Individual project.
+            </p>
         </div>
-    </div>
 
-    <!-- About me -->
-    <div class="dropdown">
-        <button onclick="window.location.href = '../AboutMe.html';" class="dropbtn">About me</button>
-    </div>
+        <!-- Technology -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    Tecnhology
+                </a>
+            </h1>
+            <p class="text">
+                Custom C++ engine made from scratch.
+            </p>
+        </div>
 
-    <div w3-include-html="index.html"></div>
-    <section class="section_AboutMe" style="max-width:900px">
-
-        <br>
-        <br>
-        <a href="../index.html">
-            <img src="../Imgs/icon.png" style="width:20%">
-        </a>
-
-        <p class="title_specific">My City Life</p>
-        <h1 class="h1" style="font-size: 20px;"><b><em></em>[Work In Progress]</b></h1>
-        <img class="mainImg" src="../Imgs/MyCityLife.JPG" style="width:60%;">
-
-        <p class="info"><b>About</b></p>
-        <hr style="width:100%;text-align:left;margin-left:0">
-        <p class="text"><b>Team: </b>Individual project</p>
-        <p class="text"><b>Tecnhology: </b>Custom C++ engine made from scratch</p>
-        <p class="text">
-            <b>High concept :</b> My City Life is a project where I combine Finite State Machines to have people
-            with different states (the citizens of the city), and pathfiniding so they move
-            correctly across the city, not crossing the street for example.
-        </p>
-
-        <br>
+        <!-- High concept -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    High concept
+                </a>
+            </h1>
+            <p class="text">
+                Personal project that shows a simulation of a small city in which people has different activities to do
+                (for example, go to the cinema when they are bored, go to a restaurant when they are hungry, go home
+                when they are tired, ...). The entities use pathfinding to move around the city. The logic to
+                transition from one activity to another is done with Finite State Machines.
+            </p>
+        </div>
 
         <!-- Actor information-->
-        <p class="info"><b>The city</b></p>
-        <hr style="width:100%;text-align:left;margin-left:0">
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <p style="color: powderblue; font-size: 1vw; font-family: Tahoma "><b>The city</b></p>
+            <hr style="width:100%;text-align:left;margin-left:0">
+        </div>
 
         <!-- Citizens -->
-        <img class="actors_img" src="../Imgs/MyCityLife/person.png" align="left" style="width:30%;" />
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/person.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Citizens</b>
+                <p class="text">They move around the city going to specific places depending on their states:</p>
+                <ul class="text" style="display:table-cell; vertical-align:top;">
+                    <li>Hungry</li>
+                    <li>Energy</li>
+                    <li>Exercise</li>
+                    <li>Fun</li>
+                </ul>
+            </div>
+        </div>
 
-        <p class="text"><b>Citizens</b></p>
-        <p class="text">
-            They move around the city going to specific places depending on their states:
-
-            <ul class="text" style="display:table-cell; vertical-align:top;">
-                <li>Hungry</li>
-                <li>Energy</li>
-                <li>Exercise</li>
-                <li>Fun</li>
-            </ul>
-        </p>
-        <br>
 
         <!-- Places: house -->
-        <img class="actors_img" src="../Imgs/MyCityLife/house.png" align="left" style="width:30%;" />
-        <p class="text"><b>House</b></p>
-        <p class="text">
-            People go there to <b>rest</b>. It increase the citizen's <b>energy </b>bar.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/house.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma">House</b>
+                <p class="text"> People go there to <b>rest</b>. It increase the citizen's <b>energy </b>bar.</p>
+            </div>
+        </div>
 
         <!-- Places: Gym -->
-        <img class="actors_img" src="../Imgs/MyCityLife/gym.png" align="left" style="width:30%;" />
-        <p class="text"><b>Gym</b></p>
-        <p class="text">
-            People go there to <b>exercise</b>. It increase the citizen's <b>exercise </b>bar.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/gym.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Gym</b>
+                <p class="text"> People go there to <b>exercise</b>. It increase the citizen's <b>exercise </b>bar.</p>
+            </div>
+        </div>
+
 
         <!-- Places: Restaurant -->
-        <img class="actors_img" src="../Imgs/MyCityLife/restaurant.png" align="left" style="width:30%;" />
-        <p class="text"><b>Restaurant</b></p>
-        <p class="text">
-            People go there to <b>eat</b>. It decreases the citizen's <b>hungry </b>bar.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/restaurant.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Restaurant</b>
+                <p class="text"> People go there to <b>eat</b>. It decreases the citizen's <b>hungry </b>bar.</p>
+            </div>
+        </div>
+
 
         <!-- Places: Park -->
-        <img class="actors_img" src="../Imgs/MyCityLife/park.png" align="left" style="width:30%;" />
-        <p class="text"><b>Park</b></p>
-        <p class="text">
-            People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
-            category. It increases the citizen's <b>fun </b>bar.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/park.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Park</b>
+                <p class="text">
+                    People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
+                    category. It increases the citizen's <b>fun </b>bar.
+                </p>
+            </div>
+        </div>
 
         <!-- Places: Cinema -->
-        <img class="actors_img" src="../Imgs/MyCityLife/cinema.png" align="left" style="width:30%;" />
-        <p class="text"><b>Cinema</b></p>
-        <p class="text">
-            People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
-            category. It increases the citizen's <b>fun </b>bar.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/cinema.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Cinema</b>
+                <p class="text">
+                    People go there to <b>have fun</b>. It is one of the places inside the <em>entertainment</em>
+                    category. It increases the citizen's <b>fun </b>bar.
+                </p>
+            </div>
+        </div>
 
         <!-- Places: Road -->
-        <img class="actors_img" src="../Imgs/MyCityLife/road.png" align="left" style="width:30%;" />
-        <p class="text"><b>Road</b></p>
-        <p class="text">
-            People can't cross the road, so in order to go to a place that is on the other side of the road,
-            they will have to find a way around it.
-        </p>
-        <br>
-        <br>
-        <br>
+        <div class="slection" style=" display: flex; margin-bottom: 5%; width: 100%;">
+            <img src="../Imgs/MyCityLife/road.png" style="width: 20%;">
+            <div style="color: ghostwhite; font-size: 1vw; box-sizing: border-box; max-width: 100%; height: auto; margin-left: 2%;">
+                <b style="color: darkgrey; font-family: Tahoma ">Road</b>
+                <p class="text">
+                    People can't cross the road, so in order to go to a place that is on the other side of the road,
+                    they will have to find a way around it.
+                </p>
+            </div>
+        </div>
 
-        <p class="info"><b>Demo</b></p>
-        <hr style="width:100%;text-align:left;margin-left:0">
-        <br>
-        <video width="800" controls>
+        <video style=" display: block; margin-left: auto; margin-right: auto;" width="800" controls>
             <source src="../Imgs/MyCityLife[wip].mp4" type="video/mp4">
             <source src="../Imgs/MyCityLife[wip].ogg" type="video/ogg">
         </video>
 
-
-
-
-        <br>
-        <br>
-    </section>
+    </div>
 
 </body>
 </html>

@@ -1,93 +1,123 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Juls Guma</title>
-    <link href="..\style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .bgColor {
+            background-color: #001524;
+        }
+
+        .text {
+            color: ghostwhite;
+            font-size: 1.0vw;
+            font-family: Tahoma
+        }
+
+        .title {
+            color: powderblue;
+            font-size: 1.0vw;
+            font-family: Tahoma
+        }
+    </style>
+
 </head>
 
+<body class="body_index bgColor">
 
-<body>
+    <div style="font-size: 1.5rem; height: 20%; margin-top: 1vw; margin-left: 18%; margin-bottom: 2vw; font-family: Tahoma; cursor: pointer;" onclick="window.location='../index.html';">
+        <h1>
+            <a style="color: white; text-decoration: none;">
+                Júlia Gumà
+            </a>
+            <a style="font-size: 2.0rem; color: orange; display: block ">
+                Game AI Programmer
+            </a>
+        </h1>
+    </div>
 
-    <!-- Games -->
-    <div class="dropdown">
-        <button class="dropbtn">Games</button>
-        <div class="dropdown-content">
-            <a href="eyesOfMinerva.html">Eyes of Minerva</a>
-            <a href="eyesOfMinerva_VR.html">Eyes of Minerva: VR</a>
-            <a href="ToyTank.html">ToyTank!</a>
-            <a href="Gooh.html">Gooh</a>
+    <div style="background-color: slategrey; font-size: 2.8rem;">
+        <p style="text-align: center; color: ghostwhite; padding-top: 5px; padding-bottom: 5px; font-family: Tahoma ">Eyes of Minerva</p>
+    </div>
+
+    <div style="font-size: 0.8rem; height: 100%; margin-top: 1vw; margin-left: 18%; margin-bottom: 2vw; margin-right: 18%;">
+
+        <div style="margin-top: 2vw; margin-bottom: 2vw;">
+            <img src="../Imgs/eyesOfMinerva_title.jpeg" style="width: 55%; display: block; margin-left: auto; margin-right: auto; ">
         </div>
-    </div>
 
-    <!-- Projects -->
-    <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-            <a href="Projects\MyCityLife.html">My City Life</a>
-            <a href="..\Projects\PencilRenderingTechnique.html">Real-Time Pencil Rendering</a>
+        <!-- Team -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    Team
+                </a>
+            </h1>
+            <p class="text">
+                4 artists and 6 programmers.
+            </p>
         </div>
+
+        <!-- Technology -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    Tecnhology
+                </a>
+            </h1>
+            <p class="text">
+                Unreal Engine 4.
+            </p>
+        </div>
+
+        <!-- High concept -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    High concept
+                </a>
+            </h1>
+            <p class="text">
+                Eyes of Minerva is a stealth first person puzzle game, where the player
+                will traverse a maze of rooms riddled with enemies. The player will have to use all the tools at
+                their disposal to either distract or disable the enemies.
+            </p>
+        </div>
+
+        <!-- My role -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:2vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    My role
+                </a>
+            </h1>
+            <p class="text">
+                AI Programmer + Producer
+            </p>
+        </div>
+
+        <!-- My main contributions to the game -->
+        <div style="height:20%; margin-top: 1vw; margin-bottom:4vw; ">
+            <h1>
+                <a class="title" style="color: powderblue; text-decoration: none; ">
+                    My main contributions to the game
+                </a>
+            </h1>
+            <ul class="text">
+                <li>Implement the Spider enemy</li>
+                <li>Implement big part of shared enemy mechanics</li>
+                <li>Contribute on sound integration</li>
+                <li>Credits</li>
+                <li>Organize tasks and communicate with the art department</li>
+            </ul>
+        </div>
+
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/nOaBBpuPpxQ" title="Eyes Of Minerva   Digipen Institute Of Technology   Bilbao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     </div>
-
-    <!-- About me -->
-    <div class="dropdown">
-        <button onclick="window.location.href = '../AboutMe.html';" class="dropbtn">About me</button>
-    </div>
-
-
-
-
-    <section class="section_AboutMe" style="max-width:900px">
-
-        <br>
-        <br>
-        <a href="../index.html">
-            <img src="../Imgs/icon.png" style="width:20%">
-        </a>
-
-        <p class="title_specific">Eyes of Minerva</p>
-        <img src="../Imgs/eyesOfMinerva_title.jpeg" style="width:100%;">
-
-
-        <p class="text"><b>Team: </b>4 artists and 6 programmers</p>
-        <p class="text"><b>Tecnhology: </b>Unreal Engine 4</p>
-        <p class="text">
-            <b>High concept :</b> Eyes of Minerva is a stealth first person puzzle game, where the player
-            will traverse a maze of rooms riddled with enemies. The player will have to use all the tools at
-            their disposal to either distract or disable the enemies.
-        </p>
-
-        <p class="text"><b>My role: </b>Gameplay programmer + Producer</p>
-
-        <p class="text"><b>My main contributions to the game: </b></p>
-        <ul class="text">
-            <li>Implement the Spider enemy</li>
-            <li>Implement big part of shared enemy mechanics</li>
-            <li>Contribute on sound integration</li>
-            <li>Credits</li>
-            <li>Organize tasks and communicate with the art department</li>
-        </ul>
-
-
-        <br>
-        <br>
-        <br>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nOaBBpuPpxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <br>
-        <br>
-        <br>
-
-        <!--iframe width="800" height="345" src="https://youtu.be/nOaBBpuPpxQ"></!--iframe-->
-        <!--
-    <video width="800" controls>
-
-        <source src="Imgs/eyesOfMinerva_video.mp4" type="video/mp4">
-        <source src="Imgs/eyesOfMinerva_video.ogg" type="video/ogg">
-    </video>
-        -->
-
-    </section>
 
 </body>
 </html>
